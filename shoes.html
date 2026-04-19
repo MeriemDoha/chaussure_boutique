@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Women Shoes Store</title>
+   <style>
+  body {
+  font-family: Arial;
+  text-align: center;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 180px;   /* 👈 SMALL WIDTH */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+}
+
+.card img {
+  width: 100%;   /* 👈 SMALL IMAGE INSIDE CARD */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.checkout {
+  background: white;
+  width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+}
+
+.checkout input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkout button {
+  width: 100%;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background: gray;
+}
+   </style>
+ </head>
+<body>
+
+<header>
+  <h1>Women Shoes Store 👠</h1>
+</header>
+
+<h2>New Collection</h2>
+
+<section class="products">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1528701800489-20be3c2ea0f6" alt="shoe">
+    <h3>Elegant Heels</h3>
+    <p>85€</p>
+    <button>Buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2" alt="shoe">
+    <h3>Sport Sneakers</h3>
+    <p>95€</p>
+    <button>Buy</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="shoe">
+    <h3>Casual Shoes</h3>
+    <p>70€</p>
+    <button>Buy</button>
+  </div>
+
+</section>
+<section class="checkout">
+  <h1>Checkout 💳</h1>
+  <h2>Payment Details</h2>
+
+  <form>
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Address" required>
+    <input type="email" placeholder="Email" required>
+
+    <input type="text" placeholder="Card Number" required>
+    <input type="text" placeholder="Expiry Date" required>
+    <input type="text" placeholder="CVV" required>
+
+    <button type="submit">Pay Now</button>
+
+  </form>
+
+</body>
+</html>
